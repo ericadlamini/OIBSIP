@@ -3,27 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/calculator-edproject/styles.css" />
 
     <title>Calculator</title>
   </head>
   <body>
     <div class="calculator-ed">
-      <button onClick="appendtoDisplay('1')">1</button>
-      <button onClick="appendtoDisplay('2')">2</button>
-      <button onClick="appendtoDisplay('3')">3</button>
-      <button onClick="appendtoDisplay('+')">+</button>
-      <button onClick="appendtoDisplay('4')">4</button>
-      <button onClick="appendtoDisplay('5')">5</button>
-      <button onClick="appendtoDisplay('6')">6</button>
-      <button onClick="appendtoDisplay('-')">-</button>
-      <button onClick="appendtoDisplay('7')">7</button>
-      <button onClick="appendtoDisplay('8')">8</button>
-      <button onClick="appendtoDisplay('9')">9</button>
-      <button onClick="appendtoDisplay('*')">x</button>
-      <button onClick="resetCalculator()">AC</button>
-      <button onClick="appendtoDisplay('0')">0</button>
-      <button onClick="appendtoDisplay('/')">/</button>
-      <button onClick="calculate()">=</button>
+      <input id="display" />
+      <div class="keys-btn">
+        <button onClick="appendtoDisplay('1')">1</button>
+        <button onClick="appendtoDisplay('2')">2</button>
+        <button onClick="appendtoDisplay('3')">3</button>
+        <button onClick="appendtoDisplay('+')" class="operators">+</button>
+        <button onClick="appendtoDisplay('4')">4</button>
+        <button onClick="appendtoDisplay('5')">5</button>
+        <button onClick="appendtoDisplay('6')">6</button>
+        <button onClick="appendtoDisplay('-')" class="operators">-</button>
+        <button onClick="appendtoDisplay('7')">7</button>
+        <button onClick="appendtoDisplay('8')">8</button>
+        <button onClick="appendtoDisplay('9')">9</button>
+        <button onClick="appendtoDisplay('*')" class="operators">x</button>
+        <button onClick="resetCalculator()" class="reset-button">AC</button>
+        <button onClick="appendtoDisplay('0')">0</button>
+        <button onClick="appendtoDisplay('/')">/</button>
+        <button onClick="calculate()" class="operators">=</button>
+      </div>
     </div>
+    <script src="/calculator-edproject/index.js"></script>
   </body>
 </html>
